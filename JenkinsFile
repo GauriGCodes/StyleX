@@ -27,10 +27,10 @@ pipeline {
         }
         
         stage('Deploy') {
-            steps {
-                // Deploy built artifacts to deployment directory
-                sh 'rm -rf ${DEPLOY_DIR}/*' // Clear existing files
-                sh 'cp -r build/* ${DEPLOY_DIR}'
+           steps {
+            // Deploy built artifacts to deployment directory
+            sh 'rm -rf ${DEPLOY_DIR}/*' // Clear existing files
+            sh 'cp -r dist/* ${DEPLOY_DIR}'
             }
         }
     }
