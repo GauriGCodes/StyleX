@@ -3,7 +3,7 @@ pipeline {
     
     tools {
         //NodeJS Version
-        nodejs '17.6.0'
+        NodeJS '17.6.0'
     }
 
     environment {
